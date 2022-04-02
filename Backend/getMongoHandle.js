@@ -6,7 +6,7 @@ const schema = require('./trashSchema.js')
 const getMongoHandle = async () => {
 
     // mongodb uri (please change username and password in production)
-    const DBURI = 'mongodb+srv://Aaryadev:aurora1127@cluster0.jvar5.mongodb.net/iet-trash-project?retryWrites=true&w=majority';
+    const DBURI = 'mongodb+srv://<username>:<password>@cluster0.jvar5.mongodb.net/iet-trash-project?retryWrites=true&w=majority';
     mongoose.connect(DBURI, (err, db)=>{
         if(err) console.log(err);
         else {
